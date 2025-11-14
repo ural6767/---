@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        .menu {
+            width: 230px;
+            background: #C0C0C0;
+            border: 1px solid #bbb;
+            border-radius: 6px;
+        }
+
+        .menu-item {
+            display: block;
+            text-decoration: none;
+            color: black;
+            background: #DCDCDC;
+            padding: 12px 20px;
+            border-bottom: 1px solid #aaa;
+        }
+
+            .menu-item:hover {
+                background: linear-gradient(to bottom, #ccc, #999);
+                color: white;
+            }
+
+        .item {
+            position: relative;
+        }
+
+        .drop {
+            display: none;
+            background: #A9A9A9;
+            overflow: hidden;
+        }
+
+        .drop_item {
+            display: block;
+            text-decoration: none;
+            color: #333;
+            padding: 10px 25px;
+            border-bottom: 1px solid #ccc;
+            background: #696969;
+        }
+
+            .drop_item:hover {
+                background: #2F4F4F;
+            }
+
+        .item:hover .drop {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu">
+        <div class="item">
+            <a href="#" class="menu-item">Главная</a>
+            <div class="drop">
+                <a href="#" class="drop_item">Главная страница</a>
+                <a href="#" class="drop_item">Контакты</a>
+                <a href="#" class="drop_item">О нас</a>
+            </div>
+        </div>
+
+        <div class="item">
+            <a href="#" class="menu-item">Поставщики</a>
+            <div class="drop">
+                <a href="#" class="drop_item">ООО "Дизайн"</a>
+                <a href="#" class="drop_item">ООО "Арт"</a>
+                <a href="#" class="drop_item">ООО "Фотостиль"</a>
+            </div>
+        </div>
+        <a href="#" class="menu-item">Отдел продаж</a>
+        <a href="#" class="menu-item">Наши услуги</a>
+        <a href="#" class="menu-item">Контакты</a>
+        <a href="#" class="menu-item">О нас</a>
+    </div>
+</body>
+</html>

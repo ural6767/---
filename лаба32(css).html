@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        .menu {
+            display: block;
+            width: 200px;
+            padding: 15px;
+            color: red;
+            border-radius: 4px;
+            background-color: blue;
+            border-bottom: 3px solid green;
+            text-align: center;
+            font-weight: bold;
+            position: relative;
+        }
+
+            .menu:hover {
+                background-color: black;
+                color: pink;
+            }
+
+        .under-menu {
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 100%;
+            width: 100%;
+            height: 100%;
+        }
+
+        .menu:hover > .under-menu {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu">
+        <span>Главная</span>
+        <div class="under-menu">
+            <div class="menu">
+                <span>Электроника</span>
+                <div class="under-menu">
+                    <div class="menu">Телефон</div>
+                    <div class="menu">Компьютер</div>
+                    <div class="menu">Игровая мышь</div>
+                    <div class="menu">Планшет</div>
+                </div>
+            </div>
+            <div class="menu">
+                <span>Бытовая техника</span>
+                <div class="under-menu">
+                    <div class="menu">Холодильник</div>
+                    <div class="menu">Стиральная машина</div>
+                    <div class="menu">Посудомоечная машина</div>
+                    <div class="menu">Микроволновая печь</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
